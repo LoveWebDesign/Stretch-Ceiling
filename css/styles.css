@@ -28,10 +28,10 @@
 
 .navbar-wrapper {
 	background: #212a34;
+	border-bottom: 1px solid #2d353d;
 	box-sizing: border-box;
 	height: 80px;
 	margin: 0 auto;
-	opacity: 0.98;
 	position: fixed;
 	width: 100%;
 	z-index: 3;
@@ -82,7 +82,7 @@ nav {
 }
 
 .menu li a:hover {
-	background: #181e25;
+	background: #2e3b4a;
 	border-bottom: 3px solid #3bbbd2;
 	color: #fff;
 }
@@ -122,7 +122,7 @@ nav {
 header {
 	background: url('../images/main-bg.jpg') no-repeat;
 	background-size: cover;
-	height: 700px;
+	height: 650px;
 	margin: 0 auto;
 	overflow: hidden;
 	width: 100%;
@@ -136,7 +136,7 @@ header {
 
 
 h1,
-.sub-title {
+.header-sub-title {
 	color: #fff;
 	text-align: center;
 } 
@@ -148,7 +148,7 @@ h1	{
 	max-width: 830px; 
 }
 
-.sub-title {
+.header-sub-title {
 	font: 22px 'Gotham-Pro-Regular';
 	margin: 0 auto 100px;
 }
@@ -172,3 +172,82 @@ h1	{
 .header-cta:hover {
 	background: #06a5c2;
 }
+
+.second-screen-wrapper {
+	background: #212a34;
+	position: relative;
+} 
+
+.angle {
+	background: url('../images/angle.png') no-repeat;
+	background-size: cover;
+	height: 116px;
+	position: absolute;
+	top: -116px;
+	width: 100%;
+}
+
+.container {
+	box-sizing: border-box;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 35px 0 60px;
+	width: 960px;
+}
+
+h2 {
+	color: #3eb2c8;
+	font: 30px 'Gotham-Pro-Bold';
+	margin: 0 auto 15px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.sub-title {
+	color: #808080;
+	font: 14px 'Gotham-Pro-Light';
+	margin: 0 auto 50px;
+	text-align: center;
+}
+
+.reason-panel {
+	float: left;
+	overflow: hidden;
+}
+
+.reason-block {
+	float: left;
+	width: 185px;
+}
+
+.reason-experience,
+.reason-cost,
+.reason-speed,
+.reason-smile,
+.reason-guarantee {
+	height: 89px;
+	margin: 0 auto;
+	width: 89px;
+}
+
+.reason-experience {
+	background: url('../images/sprite.png') -141px 0;
+}
+
+.reason-cost {
+	background: url('../images/sprite.png') -231px 0;
+}
+
+.reason-speed
+
+.reason-description {
+	color: #ccc;
+	font: 13px 'Gotham-Pro-Light';
+	text-align: center;
+}
+
+.reason-decor {
+	color: #fff;
+	font: 24px 'Gotham-Pro-Bold';
+}
+
