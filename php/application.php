@@ -16,13 +16,13 @@ $usertel = $_POST['phone']; // сохраняем в переменную дан
  
 // Формирование заголовка письма
 $subject  = "Новая заявка на курс ПАРИКМАХЕР";
-$headers  = "From: <infotex@i.ua>\r\n";
+$headers  = "From: <viktoriia.mostovaia@mail.ru>\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html;charset=utf-8 \r\n";
  
 // Формирование тела письма
 $msg  = "<html><body style='font-family:Georgia,sans-serif;'>";
-$msg .= "<fieldset><legend style='text-align:center;'><h2 style='font-size: 16px;font-weight:bold;'>Заявка на курс<span style='color:#fe4e50;'> ПАРИКМАХЕР<span></h2>\r\n</legend>";
+$msg .= "<fieldset><legend style='text-align:center;'><h2 style='font-size: 16px;font-weight:bold;'>Новая заявка</h2>\r\n</legend>";
 $msg .= "<p style='color:#808080; margin-top: 40px;'>Имя: <span style='font-size:18px; color:#000;'>".$username."</span></p>\r\n";
 $msg .= "<p style='color:#808080;'>Телефон: <span style='font-size:18px; color:#000;'>".$usertel."</span></p>\r\n</fieldset>";
 $msg .= "</body></html>";
