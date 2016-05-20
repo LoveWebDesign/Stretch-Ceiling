@@ -49,12 +49,12 @@ jQuery.fn.exists = function() {
     var form = $('.footer-form, .popup-form'),
       btn = form.find('.btn-submit');
     
-    form.find('.rfield').addClass('empty_field');
+    form.find('.required-field').addClass('empty_field');
   
     setInterval(function(){
     
       if($('#phone').exists()){
-        var pmc = $('#phone');
+        var pmc = $('#phone #popup-phone');
         if ( (pmc.val().indexOf("_") != -1) || pmc.val() == '' ) {
           pmc.addClass('empty_field');
         } else {

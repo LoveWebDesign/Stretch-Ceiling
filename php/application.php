@@ -15,7 +15,7 @@ $usertel = $_POST['phone']; // сохраняем в переменную дан
 
  
 // Формирование заголовка письма
-$subject  = "Новая заявка на курс ПАРИКМАХЕР";
+$subject  = "Новая заявка";
 $headers  = "From: <viktoriia.mostovaia@mail.ru>\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html;charset=utf-8 \r\n";

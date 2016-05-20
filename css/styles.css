@@ -917,29 +917,28 @@ label {
 	margin: 0 0 40px;
 }
 
-.copyright-block {
-	float: left;
-	margin: 0 20px 0 0;
-	width: 200px;
-}
 
 .footer-logo {
 	background: url('../images/sprite.png') no-repeat 0 -1146px;
 	display: inline-block;
+	float: left;
 	height: 54px;
-	margin: 0 0 33px;
+	margin: 0 0 50px;
 	padding: 0 30px 0 0;
 	width: 95px;
 }
 
 .copyright {
+	clear: both;
 	color: #929496;
-	font: 14px 'Gotham-Pro-Medium';
-	margin: 0 0 18px;
+	font-family: Arial, sans-serif;
+	font-size: 12px;
+	margin: 0 0 8px;
+	text-align: center;
 }
 
 .footer-phones {
-	float: left;
+	float: right;
 	position: relative;
 	text-align: right;
 	width: 170px;
@@ -960,32 +959,30 @@ label {
 	margin: 0 0 12px;
 }
 
-.rights {
-	color: #929496;
-	font: 12px 'Gotham-Pro-Medium';
-	margin: 45px 0 0;
-}
-
 .development {
 	clear: both;
-	color: #606060;
-	font: 10px 'Gotham-Pro-Medium';
+	color: #929496;
+	font-size: 11px;
+	font-family:  Arial, sans-serif;
+	margin: 0;
+	text-align: center;
 }
 
 .ad-agency {
-	color: #f32039;
+	color: #cfcdcd;
+	font-weight: bold;
 	text-decoration: none;
 }
 
 .ad-agency:hover {
-	color: #fe5569;
+	color: #f32039;
 }
 
 .popup-heading {
 	color: #fff;
 	font: 16px 'Gotham-Pro-Regular';
 	line-height: 26px;
-	margin: 15px 0 20px;
+	margin: 0 0 10px;
 	text-align: center;
 }
 
@@ -1008,14 +1005,21 @@ label {
 	box-sizing: border-box;
 	display: none;
 	font-family: Arial, sans-serif;
-	height: 450px;
+	height: 490px;
 	left: 50%;
-	margin: -235px 0 0 -200px; 
+	margin: -245px 0 0 -200px; 
 	padding: 30px 20px;
 	position: fixed;
 	top: 50%;
 	width: 400px;
 	z-index: 10;
+}
+
+.apply-title {
+	color: #49cee6;
+	font: 30px 'Gotham-Pro-Bold';
+	margin: 0;
+	text-align: center;
 }
 
 .cancel {
