@@ -42,7 +42,7 @@ nav {
 	width: 1200px;
 }
 
-.header-logo {
+.logo {
 	background: url('../images/sprite.png') no-repeat 0 -1146px;
 	display: inline-block;
 	float: left;
@@ -52,7 +52,7 @@ nav {
 	width: 95px;
 }
 
-.header-logo:after {
+.logo:after {
 	content: url('../images/line.png');
 	display: inline-block;
 	margin: -14px 0 0;
@@ -76,11 +76,18 @@ nav {
 	color: #c2c2c2;
 	display: inline-block;
 	font: 16px 'Gotham-Pro-Light';
+	outline: none;
 	padding: 32px 37px 30px;
 	text-decoration: none;
 }
 
 .menu li a:hover {
+	background: #2e3b4a;
+	color: #fff;
+
+}
+
+.menu li a:active {
 	background: #2e3b4a;
 	color: #fff;
 }
@@ -118,7 +125,7 @@ nav {
 
 
 header {
-	background: url('../images/main-bg.jpg') no-repeat;
+
 	background-size: cover;
 	height: 650px;
 	margin: 0 auto;
@@ -190,7 +197,14 @@ h1	{
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 35px 0 100px;
+	position: relative;
 	width: 960px;
+}
+
+.hidden-item {
+	height: 70px;
+	position: absolute;
+	top: -70px;
 }
 
 .heading-1 {
@@ -268,11 +282,12 @@ h1	{
 	font: 24px 'Gotham-Pro-Bold';
 }
 
+
 .heading-2 {
 	color: #3eb2c8;
 	font: 30px 'Gotham-Pro-Bold';
 	letter-spacing: -0.04em;
-	margin: 35px auto 50px;
+	margin: 20px auto 50px;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -372,6 +387,7 @@ h1	{
 	top: -167px;
 	width: 100%;
 }
+
 
 .example-block-1,
 .example-block-2 {
@@ -587,6 +603,7 @@ h1	{
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 45px 0 60px;
+	position: relative;
 	width: 960px;
 }
 
@@ -663,7 +680,304 @@ h1	{
 	margin: 0;
 }
 
+.feedback-container {
+	box-sizing: border-box;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	padding: 35px 0 80px;
+	width: 960px;
+}
+
+.slider-container {
+	height: 470px;
+	overflow: hidden;
+}
+
+.slider.slick-slider {
+	margin: 0 auto ;
+	position: relative;
+	width: 857px;
+}
+
+.slick-arrow {
+	background: none;
+	border: none;
+	height: 37px;
+	margin-top: -43px;
+	outline: none;
+	position: absolute;
+	text-indent: -99999px;
+	top: 50%;
+	width: 20px;
+}
+
+.slick-prev {
+	background: url('../images/sprite.png') 0 -56px;
+	left: -30px;
+}
+
+.slick-next {
+	background: url('../images/sprite.png') -23px -56px;
+	right: -30px;
+}
+
+.slick-dots {
+	bottom: 20px;
+	left: 50%;
+	list-style: none;
+	margin-left: -30px; 
+	padding: 0;
+	position: absolute;
+}
+
+.slick-dots li {
+	display: inline-block;
+	margin: 0 7px 0 0;
+
+}
+
+.slick-dots .slick-active button {
+	background: none;
+}
+
+.slick-dots li button {
+	background: #2d3846;
+	border: 2px solid #2d3846;
+	border-radius: 50%;
+	height: 13px;
+	outline: none;
+	padding: 0;
+	text-indent: -99999px;
+	width: 13px;
+}
+
+.feedback {
+	background: url('../images/sprite.png') -3px -646px;
+	box-sizing: border-box;
+	height: 458px;
+	margin: 0 auto;
+	outline: none;
+	padding: 120px 90px 0 160px;
+	width: 857px;
+}
+
+.client-1,
+.client-2,
+.client-3 {
+	background: url('../images/sprite.png') -876px -642px;
+	float: left;
+	height: 207px;
+	margin-top: 40px;
+	width: 207px;
+}
+
+.client-2 {
+	background: url('../images/sprite.png') -1094px -642px;
+}
+
+.client-3 {
+	background: url('../images/sprite.png') -1309px -642px;
+}
+
+.feedback-block {
+	float: left;
+	margin: 0 0 0 45px;
+	width: 355px;
+}
+
+.client-data {
+	color: #252d38;
+	font: 18px 'Gotham-Pro-Bold';
+}
+
+.client-data.client-feedback-1 {
+	margin: 40px 0 0;
+}
+
+.client-data.client-feedback-2 {
+	margin: 60px 0 0;
+}
+
+.feedback-text {
+	color: #252525;
+	font: 13px 'Gotham-Pro-Regular';
+	line-height: 24px;
+}
+
+.big-logo {
+	background: url('../images/sprite.png') -868px -875px;
+	float: right;
+	height: 132px;
+	margin: 80px 120px 0 0;
+		overflow: hidden;
+	width: 233px;
+}
+
 .footer-wrapper {
 	background: #212934;
+	clear: both;
+	min-height: 300px 
+}
+
+.footer-container {
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 45px 0 60px;
+	position: relative;
+	width: 960px;
+}
+
+.footer-form {
+	background: #2d3846;
+	box-sizing: border-box;
+	height: 510px;
+	padding: 50px;
+	position: absolute;
+	top: -265px;
+	width: 520px;
+} 
+
+.footer-hidden {
+	height: 90px;
+	position: absolute;
+	top: -90px;
+}
+
+.form-title {
+	color: #49cee6;
+	font: 30px 'Gotham-Pro-Bold';
+	margin: 0 0 20px;
+}
+
+.form-text {
+	color: #cfcdcd;
+	font: 16px 'Gotham-Pro-Light';
+	line-height: 24px;
+	margin: 0 auto;
+	text-align: center;
+	width: 360px;
+}
+
+label {
+	color: #8d8e8e;
+	display: inline-block;
+	font: 16px 'Gotham-Pro-Regular';
+	margin: 25px 0 7px;
+}
+
+.asterisk {
+	color: #f81621;
+}
+
+input[type="text"] {
+	border: 2px solid #c5c7c7;
+	border-radius: 6px;
+	box-sizing: border-box;
+	display: block;
+	font: 16px 'Gotham-Pro-Regular';
+	height: 50px;
+	margin: 0 auto;
+	outline: none;
+	padding: 0 15px;
+	width: 420px;
+}
+
+input[type="text"]:focus {
+	border: 2px solid #49cee6;
+}
+
+.footer-submit {
+	background: #49cee6;
+	border: none;
+	border-radius: 22px;
+	color: #28323f;
+	display: block;
+	font: 18px 'Gotham-Pro-Medium';
+	height: 43px;
+	margin: 45px auto 0;
+	outline: none;
+	width: 237px;
+}
+
+.footer-submit:hover {
+	background: #40b9cf;
+}
+
+.footer-info {
+	box-sizing: border-box;
+	float: right;
+	padding: 0 0 0 35px;
+	width: 435px;
+}
+
+.footer-title {
+	color: #cfcdcd;
+	font: 18px 'Gotham-Pro-Regular';
+	margin: 0 0 40px;
+}
+
+.copyright-block {
+	float: left;
+	margin: 0 20px 0 0;
+	width: 200px;
+}
+
+.footer-logo {
+	background: url('../images/sprite.png') no-repeat 0 -1146px;
+	display: inline-block;
+	height: 54px;
+	margin: 0 0 33px;
+	padding: 0 30px 0 0;
+	width: 95px;
+}
+
+.copyright {
+	color: #929496;
+	font: 14px 'Gotham-Pro-Medium';
+	margin: 0 0 18px;
+}
+
+.footer-phones {
+	float: left;
+	position: relative;
+	text-align: right;
+	width: 170px;
+}
+
+.footer-phone-icon {
+	background: url('../images/sprite.png') no-repeat -98px 0;
+	height: 34px;
+	left: 0;
+	position: absolute;
+	top: 5px;
+	width: 33px;
+}
+
+.footer-phone {
+	color: #fff;
+	font: 16px 'Gotham-Pro-Regular';
+	margin: 0 0 12px;
+}
+
+.rights {
+	color: #929496;
+	font: 12px 'Gotham-Pro-Medium';
+	margin: 45px 0 0;
+}
+
+.development {
+	clear: both;
+	color: #606060;
+	font: 10px 'Gotham-Pro-Medium';
+}
+
+.ad-agency {
+	color: #f32039;
+	text-decoration: none;
+}
+
+.ad-agency:hover {
+	color: #fe5569;
 }
 

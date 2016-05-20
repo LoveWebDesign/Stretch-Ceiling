@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Натяжные потолки от фирмы ART-V</title>
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/animate.css">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/slick.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    
+
   </head>
   <body>
     <div class="navbar-wrapper">
       <nav>
-        <a class="header-logo" href=""></a>
+        <a class="logo" href=""></a>
         <ul class="menu">
-          <li><a href="">Виды</a></li>
-          <li><a href="">Цены</a></li>
-          <li><a href="">Преимущества</a></li>
-          <li><a href="">Как заказать</a></li>
-          <li><a href="">Отзывы</a></li>
-          <li><a href="">Контакты</a></li>
+          <li><a href="#kinds">Виды</a></li>
+          <li><a href="#prices">Цены</a></li>
+          <li><a href="#benefits">Преимущества</a></li>
+          <li><a href="#order">Как заказать</a></li>
+          <li><a href="#feedback">Отзывы</a></li>
+          <li><a href="#contact">Контакты</a></li>
         </ul>
         <div class="phone-block">
           <div class="line"></div>
@@ -29,7 +33,7 @@
         </div>
       </nav>
     </div>
-    <header>
+    <header data-parallax="scroll" data-image-src="images/main.jpg">
       <h1>ЕВРОПЕЙСКИЕ НАТЯЖНЫЕ ПОТОЛКИ ОТ ПРОИЗВОДИТЕЛЯ</h1>
       <p class="header-sub-title">Монтаж за 1 день, по оптимальным ценам!</p>
       <a href="" class="header-cta">Узнать стоимость</a>
@@ -66,11 +70,14 @@
             <div class="reason-guarantee"></div>
             <p class="reason-description"><span class="reason-decor">12</span> лет гарантии</p>
           </div>
+          
 
         </div><!--/.reason-panel-->
+
       </div><!--/.container-->
     </div><!--/.second-screen-wrapper-->
     <div class="container">
+      <div class="hidden-item" id="kinds"></div>
       <h2 class="heading-2">Наш ассортимент</h2>
       <div class="kinds-panel">
         <div class="kind-1">
@@ -98,12 +105,26 @@
 
     <div class="fourth-screen-wrapper">
       <div class="texture-angle"></div>
+      <div class="hidden-item" id="prices"></div>
       <div class="container">
         <h2 class="heading-1">Примеры выполненных работ</h2>
         <h4 class="sub-title">Уже готовые решения для Вас и Вашей семьи</h4>
-        <div class="example-block-1">
-          <div class="example-pic-1"></div>
-          <div class="example-box-1">
+        <div class="example-block-1 scrollme">
+          <div class="example-pic-1 animateme" 
+              data-when="enter"
+              data-from="0.8"
+              data-to="0"
+              data-opacity="0"
+              data-translatex="-300"
+              data-easing="easeout"
+        ></div>
+          <div class="example-box-1 animateme" 
+              data-when="enter"
+              data-from="0.8"
+              data-to="0"
+              data-opacity="0"
+              data-translatex="300"
+              data-easing="easeout">
             <h3 class="example-text">Глянцевый 
               натяжной потолок</h3>
             <p class="area">Прихожая S = 4 м. кв.</p>
@@ -111,9 +132,21 @@
           </div>
         </div>
 
-        <div class="example-block-2">
-          <div class="example-pic-2"></div>
-          <div class="example-box-2">
+        <div class="example-block-2 scrollme">
+          <div class="example-pic-2 animateme" 
+                data-when="enter"
+                data-from="0.8"
+                data-to="0"
+                data-opacity="0"
+                data-translatex="300"
+                data-easing="easeout"></div>
+          <div class="example-box-2 animateme" 
+                data-when="enter"
+                data-from="0.8"
+                data-to="0"
+                data-opacity="0"
+                data-translatex="-300"
+                data-easing="easeout">
             <h3 class="example-text">Парящий 
               натяжной потолок</h3>
             <p class="area">Комната  S = 15 кв. м.</p>
@@ -121,21 +154,34 @@
           </div>
         </div>
 
-        <div class="example-block-3">
-          <div class="example-pic-3"></div>
-          <div class="example-box-3">
+        <div class="example-block-3 scrollme">
+          <div class="example-pic-3 animateme" 
+                data-when="enter" 
+                data-from="0.8"
+                data-to="0" 
+                data-opacity="0" 
+                data-translatex="-300" 
+                data-easing="easeout"></div>
+          <div class="example-box-3 animateme" 
+                data-when="enter"
+                data-from="0.8"
+                data-to="0"
+                data-opacity="0"
+                data-translatex="300"
+                data-easing="easeout">
             <h3 class="example-text">Глянцевый 
               натяжной потолок</h3>
-            <p class="area">Прихожая S = 4 м. кв.</p>
-            <p class="cost">Стоимость: 1200 грн</p>
+            <p class="area">Комната S = 16 м. кв.</p>
+            <p class="cost">Стоимость: 3000 грн</p>
           </div>
         </div>
 
       </div>
     </div><!--/.fourth-screen-wrapper-->
 
-    <div class="fifth-screen-wrapper">
+    <div class="fifth-screen-wrapper" >
       <div class="container">
+        <div class="hidden-item" id="benefits"></div>
         <h2 class="heading-2">Преимущества натяжного потолка</h2>
         <div class="benefit-container">
           <div class="benefit-column">
@@ -181,6 +227,7 @@
 
     <div class="sixth-screen-wrapper">
       <div class="order-container">
+      <div class="hidden-item" id="order"></div>
          <h2 class="order-heading">4 простых шага для заказа</h2>
          <div class="order-box">
             <div class="order-pic-1"></div>
@@ -206,17 +253,71 @@
       </div>
     </div><!--/.sixth-screen-wwrapper-->
 
-    <div class="container">
+    <div class="feedback-container">
+    <div class="hidden-item" id="feedback"></div>
       <h2 class="heading-2">Отзывы наших клиентов</h2>
+      <div class="slider-container">
+      <div class="slider">
+        <div class="feedback">
+          <div class="client-1"></div>
+          <div class="feedback-block">
+            <p class="client-data client-feedback-1">Иван, 50 лет, Харьков</p>
+            <p class="feedback-text">Сотрудничаем уже с данной фирмой 3 года, на первом этапе просто присматривался к ним, но после того как ребята сделали всё с учетом всех моих пожеланий и чётко в срок - стал обращаться к ним на постояной основе.</p>
+          </div>
+        </div>
+         <div class="feedback">
+          <div class="client-2"></div>
+          <div class="feedback-block">
+            <p class="client-data client-feedback-2">Михаил, 30 лет, Харьков</p>
+            <p class="feedback-text">Не люблю много печатать, поэтому буду краток: ВЫ МОЛОДЦЫ! Спасибо за качество и надёжность.</p>
+          </div>
+        </div>
+         <div class="feedback">
+          <div class="client-3"></div>
+          <div class="feedback-block">
+            <p class="client-data">Мария, 35 лет, Харьков</p>
+            <p class="feedback-text">Искала в интернете фирму, чтобы сделать ребёнку в детской потолок. Наткнулась на сайт ART-V, изучила его - всё понравилось, но сами знаете, в интернете пишут красиво, но иногда на деле получается совсем иначе(( Поэтому был страх небольшой, но все же решила рискнуть. Сейчас вот наслаждаемся прекрасным видом глянцевого потолка, и ребёнку очень нравится!</p>
+          </div>
+        </div>
+      </div><!--/#slider-->
+      </div>
+      <div class="big-logo"></div>
     </div>
 
      <div class="footer-wrapper">
-        <footer class="container">
-          <form>
+
+        <footer class="footer-container">
+          <form action="php/application.php" class="footer-form" name="application" method="POST">
+            <div class="footer-hidden" id="contact"></div>
+            <h5 class="form-title">У Вас остались вопросы?</h5>
+            <p class="form-text">Звоните нам, либо заполните форму обратной связи и наш менеджер свяжется с Вами в ближайшее время.</p>
+            <label for="name">Имя <span class="asterisk">*</span></label>
+            <input type="text" id="name">
+            <label for="phone">Телефон <span class="asterisk">*</span></label>
+            <input type="text" id="phone">
+            <input class="footer-submit" type="submit" value="Отправить" form="application">
           </form>
+          <div class="footer-info">
+            <h2 class="footer-title">Установка натяжных потолков</h2>
+            <div class="copyright-block">
+              <div class="footer-logo"></div>
+              <p class="copyright">Copyright © 2016 ART-V</p>
+            </div>
+            <div class="footer-phones">
+              <div class="footer-phone-icon"></div>
+              <p class="footer-phone">063-123-45-67</p>
+              <p class="footer-phone">050-123-45-67</p>
+              <p class="rights">Все права защищены</p>
+            </div>
+            <p class="development">Landing page создан рекламным агентством <a href="http://www.sparkpromo.com.ua/" target="_blank" class="ad-agency">SPARK</a></p>
+          </div>
         </footer>
      </div> 
    
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/parallax.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollme.min.js"></script>
+<script type="text/javascript" src="js/slick.min.js"></script>  
+<script type="text/javascript" src="js/main.js"></script>
   </body>
-  </html>
+</html>
