@@ -863,14 +863,14 @@ label {
 	color: #8d8e8e;
 	display: inline-block;
 	font: 16px 'Gotham-Pro-Regular';
-	margin: 25px 0 7px;
+	margin: 25px 0 7px 7px;
 }
 
 .asterisk {
 	color: #f81621;
 }
 
-input[type="text"] {
+.field {
 	border: 2px solid #c5c7c7;
 	border-radius: 6px;
 	box-sizing: border-box;
@@ -883,11 +883,11 @@ input[type="text"] {
 	width: 420px;
 }
 
-input[type="text"]:focus {
+.field:focus {
 	border: 2px solid #49cee6;
 }
 
-.footer-submit {
+.btn-submit {
 	background: #49cee6;
 	border: none;
 	border-radius: 22px;
@@ -900,7 +900,7 @@ input[type="text"]:focus {
 	width: 237px;
 }
 
-.footer-submit:hover {
+.btn-submit:hover {
 	background: #40b9cf;
 }
 
@@ -980,4 +980,69 @@ input[type="text"]:focus {
 .ad-agency:hover {
 	color: #fe5569;
 }
+
+.popup-heading {
+	color: #fff;
+	font: 16px 'Gotham-Pro-Regular';
+	line-height: 26px;
+	margin: 15px 0 20px;
+	text-align: center;
+}
+
+.blackout {
+	cursor: pointer;
+	display: none;
+	position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9;
+}
+
+.pop-up {
+	background: #2d3846;
+	border-radius: 3px;
+	border: 1px solid #435368;
+	box-sizing: border-box;
+	display: none;
+	font-family: Arial, sans-serif;
+	height: 450px;
+	left: 50%;
+	margin: -235px 0 0 -200px; 
+	padding: 30px 20px;
+	position: fixed;
+	top: 50%;
+	width: 400px;
+	z-index: 10;
+}
+
+.cancel {
+	background: url('../images/sprite.png') no-repeat;
+	cursor: pointer;
+	height: 16px;
+	position: absolute;
+	right: -18px;
+	top: -18px;
+	width: 16px;
+}
+
+.popup-field {
+	border: 1px solid #c5c7c7;
+	border-radius: 6px;
+	box-sizing: border-box;
+	display: block;
+	font: 16px 'Gotham-Pro-Regular';
+	height: 45px;
+	margin: 0 auto;
+	outline: none;
+	padding: 0 15px;
+	width: 350px;
+}
+
+.popup-field:focus {
+	border: 2px solid #49cee6;
+}
+
 
