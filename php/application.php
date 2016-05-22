@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Форма обратной связи</title>
-<meta http-equiv="Refresh" content="6; URL=http://kursy-parikmahera.infotex.com.ua/"> 
+<meta http-equiv="Refresh" content="6; URL=http://arelin89.ho.ua/"> 
 </head>
 <body>
 
@@ -15,7 +15,7 @@ $usertel = $_POST['phone']; // сохраняем в переменную дан
 
  
 // Формирование заголовка письма
-$subject  = "Новая заявка";
+$subject  = "Сообщение с лендинга о натяжных потолках";
 $headers  = "From: <viktoriia.mostovaia@mail.ru>\r\n";
 $headers .= "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html;charset=utf-8 \r\n";
@@ -29,7 +29,7 @@ $msg .= "</body></html>";
  
 // отправка сообщения
 if(@mail($sendto, $subject, $msg, $headers)) {
-    echo "<center style='margin-top: 70px;'><img src='../images/thanks.png'></center>";
+    echo "<center style='margin-top: 70px;'><img src='../images/thanks.jpg'></center>";
 } else {
     echo "<p>Ошибка. Сообщение не отправлено.</p>";
 }
