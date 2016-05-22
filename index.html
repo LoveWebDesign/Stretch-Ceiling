@@ -315,7 +315,7 @@
             <label for="name">Имя <span class="asterisk">*</span></label>
             <input type="text" name="name" id="name" class="field required-field" maxlength="30" required>
             <label for="phone">Телефон <span class="asterisk">*</span></label>
-            <input type="text" id="phone" class="field required-field" required>
+            <input type="tel" id="phone" class="field required-field" required>
             <input class="btn-submit" type="submit" value="Отправить" form="application">
           </form>
           <div class="footer-info">
@@ -338,10 +338,10 @@
         <h6 class="popup-heading">Оставьте свои контактные данные и менеджер свяжется с Вами для обсуждения деталей</h6>
         <form action="php/application.php" name="application" id="application" method="POST" class="popup-form">
           <label for="popup-name">Имя <span class="asterisk">*</span></label>
-          <input name="name" type="text" id="popup-name" class="popup-field required-field" maxlength="30" required>
+          <input name="name" type="text" id="popup-name" class="popup-field required-field" maxlength="30" title="Пожалуйста, введите имя кириллицей" pattern="[А-Яа-яЁёІі\s]{2,30}" required>
           <div class="phone-number">
             <label for="popup-phone">Телефон <span class="asterisk">*</span></label>
-            <input name="phone" type="text" id="popup-phone" class="popup-field required-field" required>
+            <input name="phone" type="tel" id="popup-phone" title="Введите номер мобильного телефона" class="popup-field required-field" required>
           </div>
           <input class="btn-submit" type="submit" value="Отправить" form="application">
         </form>

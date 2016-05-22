@@ -186,9 +186,9 @@ h1	{
 .angle {
 	background: url('../images/angle.png') no-repeat;
 	background-size: cover;
-	height: 116px;
+	height: 216px;
 	position: absolute;
-	top: -116px;
+	top: -136px;
 	width: 100%;
 }
 
@@ -596,6 +596,8 @@ h1	{
 
 .sixth-screen-wrapper {
 	background: url('../images/order-bg.jpg') no-repeat;
+	background-size: cover;
+	margin: 0 auto;
 }
 
 .order-container {
@@ -1049,4 +1051,11 @@ label {
 	border: 2px solid #49cee6;
 }
 
+.popup-field:valid {
+	border: 1px solid #36f04c;
+}
+
+.title {
+	font-size: 20px;
+}
 
