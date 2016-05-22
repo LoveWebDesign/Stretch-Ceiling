@@ -13,7 +13,7 @@ jQuery(document).ready(function() {
         jQuery('body,html').animate({scrollTop: top}, 700);
     		});
 	jQuery(function($){
-		jQuery('#phone, #popup-phone').mask("+38 (099) 999-99-99",{autoclear: false});
+		jQuery('#phone, #popup-phone').mask("+38 (099) 999-99-99", {autoclear: false});
 	});
 
 	jQuery('.apply').click(function(event) {
