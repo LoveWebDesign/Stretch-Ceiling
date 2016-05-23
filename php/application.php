@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+<meta charset="utf-8">
 <title>Форма обратной связи</title>
-<meta http-equiv="Refresh" content="6; URL=http://arelin89.ho.ua/"> 
+<meta http-equiv="Refresh" content="4; URL=http://artv.com.ua/"> 
 </head>
 <body>
 

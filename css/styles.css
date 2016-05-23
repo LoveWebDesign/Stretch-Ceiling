@@ -160,6 +160,7 @@ h1	{
 
 .header-cta {
 	background: #3bbbd2;
+	border: none;
 	border-radius: 30px;
 	color: #fff;
 	display: block;
@@ -167,15 +168,22 @@ h1	{
 	height: 55px;
 	line-height: 55px;
 	margin: 0 auto;
+	outline: none;
+	position: relative;
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
 	vertical-align: middle;
 	width: 327px;
+	z-index: 2;
 }
 
 .header-cta:hover {
-	background: #06a5c2;
+	background: #1499b1;
+	transition: .6s;
+	-webkit-transition: .6s;
+	-moz-transition: .6s;
+
 }
 
 .second-screen-wrapper {
@@ -340,7 +348,10 @@ h1	{
 }
 
 .calculate-cta:hover {
-	background: #06a5c2;
+	background: #1499b1;
+	transition: .6s;
+	-webkit-transition: .6s;
+	-moz-transition: .6s;
 }
 
 .kind-2 {
@@ -1049,10 +1060,6 @@ label {
 
 .popup-field:focus {
 	border: 2px solid #49cee6;
-}
-
-.popup-field:valid {
-	border: 1px solid #36f04c;
 }
 
 .title {

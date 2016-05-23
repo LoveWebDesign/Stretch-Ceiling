@@ -1,7 +1,7 @@
 jQuery(document).ready(function() {
 	jQuery('.slider').slick({
 					  arrows: true,
-					  fade: true,
+					  fade: false,
 					  dots: true,
 					  autoplay: true,
 					  autoplaySpeed: 10000,
@@ -12,9 +12,11 @@ jQuery(document).ready(function() {
             top = jQuery(id).offset().top;
         jQuery('body,html').animate({scrollTop: top}, 700);
     		});
-	jQuery(function($){
-		jQuery('#phone, #popup-phone').mask("+38 (099) 999-99-99", {autoclear: false});
-	});
+
+  jQuery(function($){
+    jQuery('#phone, #popup-phone').mask("+38 (099) 999-99-99", {autoclear: false});
+  });
+
 
 	jQuery('.apply').click(function(event) {
 				event.preventDefault();
@@ -88,3 +90,4 @@ jQuery.fn.exists = function() {
 
 });
 });
+
