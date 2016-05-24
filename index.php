@@ -12,8 +12,6 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/slick.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-<script src="js/parallax.min.js"></script>
 
   </head>
   <body>
@@ -31,12 +29,12 @@
         <div class="phone-block">
           <div class="line"></div>
           <div class="phone-icon"></div>
-          <p>063-123-45-67</p>
-          <p>050-123-45-67</p>
+          <p>067-571-72-20</p>
+          <p>063-738-63-63</p>
         </div>
       </nav>
     </div>
-    <header data-parallax="scroll" data-image-src="images/main.jpg">
+    <header>
       <h1 class="animated flip">ЕВРОПЕЙСКИЕ НАТЯЖНЫЕ ПОТОЛКИ ОТ ПРОИЗВОДИТЕЛЯ</h1>
       <p class="header-sub-title">Монтаж за 1 день по оптимальным ценам!</p>
       <form>
@@ -48,50 +46,30 @@
       <div class="container">
         <h2 class="heading-1">Почему мы?</h2>
         <h4 class="sub-title">Причины выбрать именно нас</h4>
-        <div class="reason-panel scrollme">
+        <div class="reason-panel animated fadeInLeftBig">
 
-          <div class="reason-block animateme" data-when="enter"
-              data-from="0.5"
-              data-to="0"
-              data-opacity="0"
-              data-translatex="-200">
+          <div class="reason-block">
             <div class="reason-experience"></div>
             <p class="reason-description"><span class="reason-decor">8</span> лет на рынке</p>
           </div>
 
-           <div class="reason-block animateme" data-when="enter"
-              data-from="0.5"
-              data-to="0"
-              data-opacity="0"
-              data-translatex="-400">
+           <div class="reason-block">
             <div class="reason-cost"></div>
             <p class="reason-description">От  <span class="reason-decor"> 160</span> грн за 1 м.кв.</p>
           </div>
 
-           <div class="reason-block animateme" data-when="enter"
-              data-from="0.5"
-              data-to="0"
-              data-opacity="0"
-              data-translatex="-600">
+           <div class="reason-block">
               <div class="reason-smile"></div>
               <p class="reason-description">Более <span class="reason-decor">800</span> довольных клиентов</p>
             </div>
 
-           <div class="reason-block animateme" data-when="enter"
-              data-from="0.5"
-              data-to="0"
-              data-opacity="0"
-              data-translatex="-800">
+           <div class="reason-block">
             <div class="reason-speed"></div>
             <p class="reason-description"> 
   Установка от <span class="reason-decor">1</span> дня</p>
           </div>   
 
-          <div class="reason-block animateme" data-when="enter"
-              data-from="0.5"
-              data-to="0"
-              data-opacity="0"
-              data-translatex="-1000">
+          <div class="reason-block">
             <div class="reason-guarantee"></div>
             <p class="reason-description"><span class="reason-decor">12</span> лет гарантии</p>
           </div>
@@ -326,8 +304,8 @@
               <div class="footer-logo"></div>
             <div class="footer-phones">
               <div class="footer-phone-icon"></div>
-              <p class="footer-phone">063-123-45-67</p>
-              <p class="footer-phone">050-123-45-67</p>
+              <p class="footer-phone">067-571-72-20</p>
+              <p class="footer-phone">063-738-63-63</p>
             </div>
             <p class="copyright">Copyright © 2016 ART-V. Все права защищены.</p>
             <p class="development">Создание сайта - <a href="http://www.sparkpromo.com.ua/" target="_blank" class="ad-agency">РА Spark</a></p>
@@ -346,10 +324,12 @@
             <label for="popup-phone">Телефон <span class="asterisk">*</span></label>
             <input name="phone" type="tel" id="popup-phone" title="Введите номер мобильного телефона" class="popup-field required-field" placeholder="+38 (0__) ___-__-__" required>
           </div>
-          <input class="btn-submit" type="submit" value="Отправить" form="popup-application">
+          <input class="btn-submit" type="submit" value="Отправить" form="application">
         </form>
        </div>
       <div class="blackout"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
 <script src='js/jquery.maskedinput.min.js'></script>
 <script type="text/javascript" src="js/jquery.scrollme.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>  
