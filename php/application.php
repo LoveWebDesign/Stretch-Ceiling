@@ -7,6 +7,7 @@
 </head>
 <body>
 
+
 <?php
  
 $sendto   = "viktoriia.mostovaia@mail.ru"; // почта, на которую будет приходить письмо
@@ -22,7 +23,7 @@ $headers .= "Content-Type: text/html;charset=utf-8 \r\n";
  
 // Формирование тела письма
 $msg  = "<html><body style='font-family:Georgia,sans-serif;'>";
-$msg .= "<fieldset><legend style='text-align:center;'><h2 style='font-size: 16px;font-weight:bold;'>Новая заявка</h2>\r\n</legend>";
+$msg .= "<fieldset><legend style='text-align:left;'><h2 style='font-size: 16px;font-weight:bold;'>Новая заявка</h2>\r\n</legend>";
 $msg .= "<p style='color:#808080; margin-top: 40px;'>Имя: <span style='font-size:18px; color:#000;'>".$username."</span></p>\r\n";
 $msg .= "<p style='color:#808080;'>Телефон: <span style='font-size:18px; color:#000;'>".$usertel."</span></p>\r\n</fieldset>";
 $msg .= "</body></html>";
