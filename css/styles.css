@@ -125,7 +125,7 @@ nav {
 
 
 header {
-
+	background: url('../images/main.jpg') no-repeat;
 	background-size: cover;
 	height: 650px;
 	margin: 0 auto;
@@ -391,7 +391,7 @@ h1	{
 }
 
 .texture-angle {
-	background: url('../images/texture-angle-1.png') no-repeat;
+	background: url('../images/texture-angle.png') no-repeat;
 	background-size: cover;
 	height: 169px;
 	position: absolute;
