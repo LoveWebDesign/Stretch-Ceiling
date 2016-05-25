@@ -125,7 +125,7 @@ nav {
 
 
 header {
-	background: url('../images/main.jpg') no-repeat;
+	background: url('../images/bg-1.jpg') no-repeat;
 	background-size: cover;
 	height: 650px;
 	margin: 0 auto;
@@ -968,6 +968,7 @@ label {
 .footer-phone {
 	color: #fff;
 	font: 16px 'Gotham-Pro-Regular';
+	letter-spacing: 
 	margin: 0 0 12px;
 }
 
