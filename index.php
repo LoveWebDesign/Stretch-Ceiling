@@ -324,7 +324,7 @@
             <label for="popup-phone">Телефон <span class="asterisk">*</span></label>
             <input name="phone" type="tel" id="popup-phone" title="Введите номер мобильного телефона" class="popup-field required-field" placeholder="+38 (0__) ___-__-__" required>
           </div>
-          <input class="btn-submit" type="submit" value="Отправить" form="application">
+          <input class="btn-submit" type="submit" value="Отправить" form="popup-application">
         </form>
        </div>
       <div class="blackout"></div>
