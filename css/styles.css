@@ -336,6 +336,11 @@ h1	{
 	margin: 0 0 26px;
 }
 
+.mobile-kind-3,
+.mobile-kind-4 {
+	display: none;
+}
+
 .calculate-cta {
 	background: #3eb3c8;
 	border: none;
@@ -968,7 +973,6 @@ label {
 .footer-phone {
 	color: #fff;
 	font: 16px 'Gotham-Pro-Regular';
-	letter-spacing: 
 	margin: 0 0 12px;
 }
 
@@ -1064,5 +1068,99 @@ label {
 
 .title {
 	font-size: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+	nav {
+		width: 920px;
+	}
+
+	.logo {
+		padding: 0 20px 0 0;
+	}
+
+	.logo:after {
+		margin: -15px 0 0;
+		padding-left: 114px;
+	}
+
+	.menu {
+		width: 670px;
+	}
+
+	.menu li {
+		display: inline-block;
+		margin: 0;
+	}
+
+	.menu li a {
+		font: 14px 'Gotham-Pro-Light';
+		padding: 32px 22px 30px;
+	}
+
+	.line {
+		background: url('../images/line.png');
+		height: 80px;
+		left: -11px;
+		position: absolute;
+		top: -11px;
+		width: 1px;
+	}
+
+	.phone-block {
+		padding-left: 40px;
+	}
+
+	.phone-icon {
+		left: -2px;
+		top: 10px;
+	}
+
+	.phone-block p {
+		font: 12px 'Gotham-Pro-Regular';
+	}
+
+	.container,
+	.order-container,
+	.feedback-container,
+	.slider-container,
+	.footer-container {
+		width: 920px;
+	}
+
+	.reason-block {
+		float: left;
+		margin: 0 15px 0 0;
+		width: 170px;
+	}
+
+	.kind-1,
+	.kind-2,
+	.kind-3,
+	.kind-4 {
+		border: 1px solid #e1e3e3;
+		float: left;
+		text-align: center;
+		width: 230px;
+	}
+
+	.kind-1,
+	.kind-3 {
+		margin: 0 40px 0 185px;
+	}
+
+	.kind-2,
+	.kind-4 {
+
+		margin: 0 185px 0 40px;
+	}
+
+	.kind-3,
+	.kind-4 {
+		clear: both;
+		float: left;
+		margin-top: 30px;
+	}
+
 }
 
