@@ -9,6 +9,7 @@
     <meta content="натяжные потолки в Харькове" name="description">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
     <link rel="stylesheet" href="css/animate.css">
+    <link href="css/hamburgers.min.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/slick.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
@@ -20,6 +21,12 @@
     <div class="navbar-wrapper">
       <nav>
         <a class="logo" href=""></a>
+        <button class="hamburger hamburger--elastic" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+          <p class="btn-description">MENU</p>
+        </button>
         <ul class="menu">
           <li><a href="#kinds">Виды</a></li>
           <li><a href="#prices">Цены</a></li>
@@ -348,6 +355,13 @@
         </form>
        </div>
       <div class="blackout"></div>
+       <script>
+          var $hamburger = $(".hamburger");
+          $hamburger.on("click", function(e) {
+            $hamburger.toggleClass("is-active");
+            // Do something else, like open/close menu
+          });
+        </script>
 <script src='js/jquery.maskedinput.min.js'></script>
 <script type="text/javascript" src="js/jquery.scrollme.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>  

@@ -8,7 +8,8 @@
     <meta content="натяжные потолки в Харькове" name="keywords">
     <meta content="натяжные потолки в Харькове" name="description">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
-    <link rel="stylesheet" href="css/animate.css">
+    <link href="css/hamburgers.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/slick.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">

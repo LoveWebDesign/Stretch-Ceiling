@@ -17,6 +17,10 @@ jQuery(document).ready(function() {
     jQuery('#phone, #popup-phone').mask("+38 (099) 999-99-99", {autoclear: false});
   });
 
+  jQuery('.hamburger').click(function() {
+    jQuery('.menu').toggleClass('show-menu');
+  });
+
 
 	jQuery('.apply').click(function(event) {
 				event.preventDefault();
