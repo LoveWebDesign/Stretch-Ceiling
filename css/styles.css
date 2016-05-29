@@ -235,14 +235,23 @@ h1	{
 	text-align: center;
 }
 
+.mobile-reason-block {
+		display: none;
+	}
+
 .reason-panel {
 	float: left;
+	left: 50%;
+	margin: 0 0 0 -285px;
 	overflow: hidden;
+	position: absolute;
+	width: 570px;
 }
 
 .reason-block {
 	float: left;
 	margin: 0 15px 0 0;
+	overflow: hidden;
 	width: 180px;
 }
 
@@ -1221,8 +1230,12 @@ label {
 	nav {
 		height: 80px;
 		position: relative;
-		width: 768px;
+		width: 100%;
 	} 
+
+	.logo {
+		margin-left: 20px;
+	}
 
 	.menu {
 		display: none;
@@ -1301,6 +1314,45 @@ label {
 
 	.phone-block {
 		float: right;
+	}
+
+	.phone-block p {
+		margin-right: 20px;
+	}
+
+	h1 {
+		font-size: 32px;
+		line-height: 46px;
+	}
+
+	.container,
+	.order-container,
+	.feedback-container,
+	.slider-container,
+	.footer-container {
+		width: 100%;
+	}
+
+	.container {
+		min-height: 600px;
+	}
+
+	.header-cta {
+		font-size: 18px;
+		height: 50px;
+		line-height: 50px;
+		width: 280px;
+	}
+
+	.desktop-reason-block {
+		display: none;
+	}
+
+	.mobile-reason-block {
+		display: block;
+		float: left;
+		margin: 40px 15px 0 0;
+		width: 180px;
 	}
 }
 
