@@ -8,17 +8,25 @@
     <meta content="натяжные потолки в Харькове" name="keywords">
     <meta content="натяжные потолки в Харькове" name="description">
     <link rel="shortcut icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="css/animate.css">
     <link href="css/hamburgers.min.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/slick.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    
+
 
   </head>
   <body>
     <div class="navbar-wrapper">
       <nav>
         <a class="logo" href=""></a>
+        <button class="hamburger hamburger--elastic" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+          <p class="btn-description">MENU</p>
+        </button>
         <ul class="menu">
           <li><a href="#kinds">Виды</a></li>
           <li><a href="#prices">Цены</a></li>
@@ -38,13 +46,11 @@
     <header>
       <h1 class="animated flip">ЕВРОПЕЙСКИЕ НАТЯЖНЫЕ ПОТОЛКИ ОТ ПРОИЗВОДИТЕЛЯ</h1>
       <p class="header-sub-title">Монтаж за 1 день по оптимальным ценам!</p>
-      <form>
-        <button href="" class="header-cta apply animated zoomIn">Узнать стоимость</button>
-      </form>
+      <a href="" class="header-cta apply animated zoomIn">Узнать стоимость</a>
     </header>
     <div class="second-screen-wrapper">
       <div class="angle"></div>
-      <div class="container">
+      <div class="container why-container">
         <h2 class="heading-1">Почему мы?</h2>
         <h4 class="sub-title">Причины выбрать именно нас</h4>
         <div class="reason-panel animated fadeInLeftBig">
@@ -64,19 +70,33 @@
               <p class="reason-description">Более <span class="reason-decor">800</span> довольных клиентов</p>
             </div>
 
-           <div class="reason-block">
+           <div class="reason-block desktop-reason-block">
             <div class="reason-speed"></div>
             <p class="reason-description"> 
   Установка от <span class="reason-decor">1</span> дня</p>
           </div>   
 
-          <div class="reason-block">
+          <div class="reason-block desktop-reason-block">
             <div class="reason-guarantee"></div>
             <p class="reason-description"><span class="reason-decor">12</span> лет гарантии</p>
           </div>
+
+           
           
 
         </div><!--/.reason-panel-->
+        <div class="reason-panel animated fadeInLeftBig">
+          <div class="mobile-reason-block">
+            <div class="reason-speed"></div>
+            <p class="reason-description"> 
+  Установка от <span class="reason-decor">1</span> дня</p>
+          </div>   
+
+          <div class="mobile-reason-block">
+            <div class="reason-guarantee"></div>
+            <p class="reason-description"><span class="reason-decor">12</span> лет гарантии</p>
+          </div>
+        </div>
 
       </div><!--/.container-->
     </div><!--/.second-screen-wrapper-->
@@ -233,26 +253,30 @@
       <div class="order-container">
       <div class="hidden-item" id="order"></div>
          <h2 class="order-heading">4 простых шага для заказа</h2>
-         <div class="order-box">
-            <div class="order-pic-1"></div>
-            <p class="order-title">Заявка<p>
-            <p class="order-description">Свяжитесь с нами по номерам, указанным на сайте  или заполнив форму обратной связи</p>
-         </div>
-         <div class="order-box">
-            <div class="order-pic-2"></div>
-            <p class="order-title">Замер<p>
-            <p class="order-description">К Вам бесплатно приедет замерщик для просчета точной стоимости</p>
-         </div>
-         <div class="order-box">
-            <div class="order-pic-3"></div>
-            <p class="order-title">Договор<p>
-            <p class="order-description">После просчета сметы Вы с нашим технологом заключаете договор</p>
-         </div>
-          <div class="order-box">
-            <div class="order-pic-4"></div>
-            <p class="order-title">Монтаж<p>
-            <p class="order-description">Сроки доставки и монтажа фиксируются в договоре</p>
-         </div>
+         <div class="order-mobile">
+           <div class="order-box">
+              <div class="order-pic-1"></div>
+              <p class="order-title">1. Заявка<p>
+              <p class="order-description">Свяжитесь с нами по номерам, указанным на сайте  или заполнив форму обратной связи</p>
+           </div>
+           <div class="order-box order-box-1">
+              <div class="order-pic-2"></div>
+              <p class="order-title">2. Замер<p>
+              <p class="order-description">К Вам бесплатно приедет замерщик для просчета точной стоимости</p>
+           </div>
+          </div>
+          <div class="order-mobile">
+           <div class="order-box">
+              <div class="order-pic-3"></div>
+              <p class="order-title">3. Договор<p>
+              <p class="order-description">После просчета сметы Вы с нашим технологом заключаете договор</p>
+           </div>
+            <div class="order-box">
+              <div class="order-pic-4"></div>
+              <p class="order-title">4. Монтаж<p>
+              <p class="order-description">Сроки доставки и монтажа фиксируются в договоре</p>
+           </div>
+          </div>
       </div>
     </div><!--/.sixth-screen-wwrapper-->
 
@@ -279,7 +303,7 @@
           <div class="client-3"></div>
           <div class="feedback-block">
             <p class="client-data">Мария, 35 лет, Харьков</p>
-            <p class="feedback-text">Искала в интернете фирму, чтобы сделать ребёнку в детской потолок. Наткнулась на сайт ART-V, изучила его - всё понравилось, но сами знаете, в интернете пишут красиво, но иногда на деле получается совсем иначе(( Поэтому был страх небольшой, но все же решила рискнуть. Сейчас вот наслаждаемся прекрасным глянцевым потолком!</p>
+            <p class="feedback-text">Искала в интернете фирму, чтобы сделать ребёнку в детской потолок. Наткнулась на сайт ART-V, изучила его - всё понравилось, но сами знаете, в интернете пишут красиво, но иногда на деле получается совсем иначе(( Поэтому был страх небольшой, но все же решила рискнуть. Сейчас вот наслаждаемся прекрасным видом глянцевого потолка, и ребёнку очень нравится!</p>
           </div>
         </div>
       </div><!--/#slider-->
@@ -290,7 +314,7 @@
      <div class="footer-wrapper">
 
         <footer class="footer-container">
-          <form action="php/application.php" class="footer-form" id="application" name="application" method="POST">
+          <form action="php/application.php" class="footer-form" name="application" method="POST">
             <div class="footer-hidden" id="contact"></div>
             <h5 class="form-title">У Вас остались вопросы?</h5>
             <p class="form-text">Звоните нам, либо заполните форму обратной связи и наш менеджер свяжется с Вами в ближайшее время.</p>
@@ -318,7 +342,7 @@
         <div class="cancel"></div>
         <p class="apply-title">Заявка</p>
         <p class="popup-heading">Оставьте свои контактные данные и менеджер свяжется с Вами для обсуждения деталей</p>
-        <form action="php/application.php" name="popup-application" id="popup-application" method="POST" class="popup-form">
+        <form action="php/application.php" name="popup-application" id="application" method="POST" class="popup-form">
           <label for="popup-name">Имя <span class="asterisk">*</span></label>
           <input name="name" type="text" id="popup-name" class="popup-field required-field" maxlength="30" title="Пожалуйста, введите имя кириллицей" pattern="[А-Яа-яЁёІі\s]{2,30}" required>
           <div class="phone-number">
@@ -329,8 +353,14 @@
         </form>
        </div>
       <div class="blackout"></div>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script type="text/javascript" src="js/custom.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+       <script>
+          var $hamburger = $(".hamburger");
+          $hamburger.on("click", function(e) {
+            $hamburger.toggleClass("is-active");
+            // Do something else, like open/close menu
+          });
+        </script>
 <script src='js/jquery.maskedinput.min.js'></script>
 <script type="text/javascript" src="js/jquery.scrollme.min.js"></script>
 <script type="text/javascript" src="js/slick.min.js"></script>  

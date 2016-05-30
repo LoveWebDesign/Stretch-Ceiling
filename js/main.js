@@ -5,6 +5,7 @@ jQuery(document).ready(function() {
 					  dots: true,
 					  autoplay: true,
 					  autoplaySpeed: 10000,
+            adaptiveHeight: true
 					  });
 	jQuery(".menu").on("click","a", function (event) {
         event.preventDefault();
