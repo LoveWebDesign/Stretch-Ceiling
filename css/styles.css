@@ -310,6 +310,10 @@ h1	{
 	text-transform: uppercase;
 }
 
+.kinds-panel {
+	margin: 0 auto;
+}
+
 
 .kind-1,
 .kind-2,
@@ -317,6 +321,7 @@ h1	{
 	border: 1px solid #e1e3e3;
 	float: left;
 	margin-right: 10px;
+	position: relative;
 	text-align: center;
 	width: 230px;
 }
@@ -1399,6 +1404,28 @@ label {
 		margin-left: 15px; 
 	}
 
+	.kinds-panel {
+		width: 800px;
+	}
+
+	.kind-1,
+	.kind-3 {
+		margin: 0 40px 0 128px;
+	}
+
+	.kind-2,
+	.kind-4 {
+
+		margin: 0 128px 0 40px;
+	}
+
+	.kind-3,
+	.kind-4 {
+		clear: both;
+		float: left;
+		margin-top: 30px;
+	}
+
 	.example-box-1,
 	.example-box-2,
 	.example-box-3 {
@@ -1626,6 +1653,10 @@ label {
 	.footer-container {
 		margin: 0 0 0 -300px;
 		width: 600px;
+	}
+
+	.kinds-panel {
+		width: 320px;
 	}
 
 	.kind-1,
