@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/slick.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-    
+
 
 
   </head>
@@ -104,25 +104,29 @@
       <div class="hidden-item" id="kinds"></div>
       <h2 class="heading-2">Наш ассортимент</h2>
       <div class="kinds-panel">
-        <div class="kind-1">
-          <div class="kind-1-image"></div>
-          <h5 class="kind-heading">Глянцевые</h5>
-          <button class="calculate-cta apply">Посчитать стоимость</button>
+        <div class="row">
+          <div class="kind-1">
+            <div class="kind-1-image"></div>
+            <h5 class="kind-heading">Глянцевые</h5>
+            <button class="calculate-cta apply">Посчитать стоимость</button>
+          </div>
+          <div class="kind-2">
+            <div class="kind-2-image"></div>
+            <h5 class="kind-heading">Матовые</h5>
+            <button class="calculate-cta apply">Посчитать стоимость</button>
+          </div>
         </div>
-        <div class="kind-2">
-          <div class="kind-2-image"></div>
-          <h5 class="kind-heading">Матовые</h5>
-          <button class="calculate-cta apply">Посчитать стоимость</button>
-        </div>
-        <div class="kind-3">
-          <div class="kind-3-image"></div>
-          <h5 class="kind-heading">Металлик</h5>
-          <button class="calculate-cta apply">Посчитать стоимость</button>
-        </div>
-        <div class="kind-4">
-          <div class="kind-4-image"></div>
-          <h5 class="kind-heading">Сатиновые</h5>
-          <button class="calculate-cta apply">Посчитать стоимость</button>
+        <div class="row">
+          <div class="kind-3">
+            <div class="kind-3-image"></div>
+            <h5 class="kind-heading">Металлик</h5>
+            <button class="calculate-cta apply">Посчитать стоимость</button>
+          </div>
+          <div class="kind-4">
+            <div class="kind-4-image"></div>
+            <h5 class="kind-heading">Сатиновые</h5>
+            <button class="calculate-cta apply">Посчитать стоимость</button>
+          </div>
         </div>
       </div><!--/.kinds-panel-->
     </div><!--/.third-screen-container-->
@@ -256,24 +260,24 @@
          <div class="order-mobile">
            <div class="order-box">
               <div class="order-pic-1"></div>
-              <p class="order-title">1. Заявка<p>
+              <p class="order-title">1. Заявка</p>
               <p class="order-description">Свяжитесь с нами по номерам, указанным на сайте  или заполнив форму обратной связи</p>
            </div>
            <div class="order-box order-box-1">
               <div class="order-pic-2"></div>
-              <p class="order-title">2. Замер<p>
+              <p class="order-title">2. Замер</p>
               <p class="order-description">К Вам бесплатно приедет замерщик для просчета точной стоимости</p>
            </div>
           </div>
           <div class="order-mobile">
            <div class="order-box">
               <div class="order-pic-3"></div>
-              <p class="order-title">3. Договор<p>
+              <p class="order-title">3. Договор</p>
               <p class="order-description">После просчета сметы Вы с нашим технологом заключаете договор</p>
            </div>
             <div class="order-box">
               <div class="order-pic-4"></div>
-              <p class="order-title">4. Монтаж<p>
+              <p class="order-title">4. Монтаж</p>
               <p class="order-description">Сроки доставки и монтажа фиксируются в договоре</p>
            </div>
           </div>
@@ -314,15 +318,15 @@
      <div class="footer-wrapper">
 
         <footer class="footer-container">
-          <form action="php/application.php" class="footer-form" name="application" method="POST">
+          <form action="/php/application.php" class="footer-form" id="application-foot" name="application" method="POST">
             <div class="footer-hidden" id="contact"></div>
             <h5 class="form-title">У Вас остались вопросы?</h5>
             <p class="form-text">Звоните нам, либо заполните форму обратной связи и наш менеджер свяжется с Вами в ближайшее время.</p>
             <label for="name">Имя <span class="asterisk">*</span></label>
-            <input type="text" name="name" id="name" class="field required-field" maxlength="30" required>
+            <input type="text" name="name" id="name" class="field" maxlength="30" required>
             <label for="phone">Телефон <span class="asterisk">*</span></label>
-            <input type="tel" id="phone" class="field required-field" placeholder="+38 (0__) ___-__-__" name="phone" required>
-            <input class="btn-submit" type="submit" value="Отправить" form="application">
+            <input type="tel" id="phone" class="field" placeholder="+38 (0__) ___-__-__" name="phone" required>
+            <input class="btn-submit" type="submit" value="Отправить" onclick="document.getElementById('application-foot').submit();" form="application">
           </form>
           <div class="footer-info">
             <h2 class="footer-title">Установка натяжных потолков</h2>
@@ -342,14 +346,14 @@
         <div class="cancel"></div>
         <p class="apply-title">Заявка</p>
         <p class="popup-heading">Оставьте свои контактные данные и менеджер свяжется с Вами для обсуждения деталей</p>
-        <form action="php/application.php" name="popup-application" id="application" method="POST" class="popup-form">
+        <form action="/php/application.php" name="popup-application" id="application" method="POST" class="popup-form">
           <label for="popup-name">Имя <span class="asterisk">*</span></label>
-          <input name="name" type="text" id="popup-name" class="popup-field required-field" maxlength="30" title="Пожалуйста, введите имя кириллицей" pattern="[А-Яа-яЁёІі\s]{2,30}" required>
+          <input name="name" type="text" id="popup-name" class="popup-field" maxlength="30" title="Пожалуйста, введите имя кириллицей" pattern="[A-Za-zА-Яа-яЁёІі\s]{2,30}" required>
           <div class="phone-number">
             <label for="popup-phone">Телефон <span class="asterisk">*</span></label>
-            <input name="phone" type="tel" id="popup-phone" title="Введите номер мобильного телефона" class="popup-field required-field" placeholder="+38 (0__) ___-__-__" required>
+            <input name="phone" type="tel" id="popup-phone" title="Введите номер мобильного телефона" class="popup-field" placeholder="+38 (0__) ___-__-__" required>
           </div>
-          <input class="btn-submit" type="submit" value="Отправить" form="popup-application">
+          <input class="btn-submit" type="submit" value="Отправить" onclick="document.getElementById('application').submit();" form="popup-application">
         </form>
        </div>
       <div class="blackout"></div>
